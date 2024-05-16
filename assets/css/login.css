@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    user-select: none;
+}
+:root{
+    --primary-color: rgb(22, 53, 138);
+    --secondary-color: rgba(255, 255, 255, 0.973);
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.particles-js{
+    height: 95vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+#particles-js{
+    height: 95vh;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.container{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px inset rgb(116, 113, 113);
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background: rgba(189, 185, 185, 0.541); */
+}
+
+.login-header, .login-footer{
+    height: 50px;   
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.login-header{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.login-footer{
+    font-size: 0.8rem;
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+form{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.form-control> input{
+    border-radius: 10px;
+    width: 340px;
+    margin-bottom: 10px;
+    height: 40px;
+    outline: none;
+    padding-left: 10px;
+    background-color: transparent;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border: 1px solid gray;
+    color: black;
+}
+
+
+.form-control>input::placeholder{
+    color: lightgray;
+}
+
+.form-control>input:focus{
+    outline: 1px solid rgb(21, 255, 236);
+}
+
+.form-col-2{
+    height: auto;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-col-2 > input{
+    border-radius: 10px;
+    width: 150px;
+    margin-bottom: 10px;
+    height: 40px;
+    outline: none;
+    margin: 10px; 
+    padding-left: 10px;
+    background-color: transparent;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border: 1px solid gray;
+    color: black;
+}
+
+.form-col-2 >input::placeholder{
+    color: lightgray;
+}
+
+.form-col-2 >input:focus{
+    outline: 1px solid rgb(21, 255, 236);
+}
+
+
+.login-btn{
+    border-radius: 10px;
+    width: 150px;
+    margin: 10px; 
+    height: 40px;
+    outline: none;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+
+.btn-hover:hover{
+    background-color: rgb(218, 205, 205);
+}
+
+
+#background{
+    background: url('../images/login-background.png') no-repeat;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    opacity: 0.2;
+    background-blend-mode:lighten;
+}
+
+
+.changepw-btn{
+    border-radius: 10px;
+    width: 340px;
+    margin: 10px; 
+    height: 40px;
+    outline: none;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.validUpto{
+    color: rgb(4, 70, 4);
+    padding: 10px;
+}

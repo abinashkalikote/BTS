@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+  user-select: none;
+}
+
+:root {
+  --primary-color: rgb(37, 58, 78);
+  --secondary-color: white;
+  --hover-color: rgb(15, 44, 71);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.top-header {
+  height: 8vh;
+  width: auto;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 1.5vh;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin-bottom: 1px;
+}
+
+.bodySection {
+  height: 92vh;
+  width: auto;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Design of Navar & it's components */
+
+.navbar {
+  height: 92vh;
+  width: 15vw;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.navbar > h2 {
+  padding: 15px;
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.navbar > .time {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary-color);
+  padding: 5px;
+  font-size: 20px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.linkGroup a:first-child {
+  padding: 1rem;
+  color: orange;
+  transition: all 0.25s;
+  text-align: center;
+  font-weight: 800;
+}
+
+.linkGroup a:first-child:hover {
+  color: orange;
+}
+
+.linkGroup a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  text-align: left;
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--primary-color);
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.linkGroup a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  border-bottom: 1px solid var(--secondary-color);
+  padding-left: 1rem;
+}
+
+.linkGroup a > i {
+  padding: 3px;
+}
+
+.dashboard {
+  border-top: 1px solid var(--secondary-color) !important;
+  border-bottom: 1px solid var(--secondary-color) !important;
+}
+
+.logout {
+  display: block;
+  width: 15vw;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid var(--primary-color);
+}
+
+.logout:hover {
+  border-top: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--primary-color) !important;
+}
+
+
+.create-user{
+  display: block;
+  width: 15vw;
+  position: absolute;
+  bottom: 6%;
+  border-top: 1px solid var(--primary-color);
+}
+
+.create-user:hover {
+  border-top: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--primary-color) !important;
+}
+/* Design of View  */
+
+.view {
+  height: 92vh;
+  width: 85vw;
+  letter-spacing: 1px;
+  padding: 5px;
+  border-left: 1px solid white;
+  background-color: var(--secondary-color);
+  color: #000;
+}
+
+.view > iframe {
+  height: 100%;
+  width: 100%;
+}
+
+/* MEmber module Desing */
+.quick-button {
+  float: right;
+  margin-right: 5%;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.quick-button > a {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 8px;
+  background-color: white;
+  transition: all 0.25s;
+}
+
+.quick-button > a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.full-body {
+  height: auto;
+  width: auto;
+  letter-spacing: 1px;
+  padding: 5px;
+  background-color: rgb(3, 7, 31);
+  color: var(--secondary-color);
+}
+
+ .full-body> table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+}
+
+.full-body> table thead>tr{
+  position: sticky;
+  top: 0;
+  height: 50px;
+    background-color: lightblue !important;
+}
+
+.full-body> table tr:nth-of-type(odd){
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+} 
+
+.full-body> table tr td, th{
+    padding: 5px;
+}
+
+.full-body> table tr td a{
+  color: blue;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.full-body> table tr:nth-of-type(odd):hover{
+  cursor: pointer;
+  background-color: lightgray;
+  color: gray;
+}
+.full-body> table tr:nth-of-type(even):hover{
+  cursor: pointer;
+  background-color: rgb(9, 29, 85);
+}
+
+/* Addmember design */
+
+.full-body>.addmemberform{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.addmemberform>form{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.form-control{
+  width: 90%;
+  height: auto;
+  padding: 10px;
+}
+
+.form-control input, select{
+  height: 3rem;
+  width: 80%;
+  padding-left: 1rem;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  /* box-shadow: 0 0 5px #999; */
+}
+
+.form-control>label{
+  display: block;
+}
+.addmember, .clear{
+  cursor: pointer;  
+}
+
+#addmember{
+  background-color: var(--primary-color);
+  box-shadow: none;
+  color: var(--secondary-color);
+}
+
+#addmember:hover{
+  background-color: var(--hover-color);
+}
+
+
+
+/* Deposit section */
+.depositsection{
+  height: 510px;
+}
+
+.imp{
+  color: red;
+}
+
+.depositform{
+  float: left;
+  width: 50%;
+  clear:both;
+}
+
+select{
+  cursor: pointer;
+}
+
+#processdepositbtn{
+  background-color: #f56954 !important;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 0 transparent;
+}
+
+#processdepositbtn:hover{
+  background-color: #dd422a !important;
+}
+
+
+/* Statement Design To print & Paper Size Define */
+
+.statement{
+  height: auto;
+  width: 21cm;
+  margin: 10px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+input[type="button"]{
+  width: 95px !important; 
+  height: 40px; 
+  border-radius: 10px; 
+  cursor: pointer;
+  text-align:center;
+  background-color: var(--btn-color); 
+  color: white;
+}
+
+
+/* popupmsg */
+
+.popupmsg{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  margin: 5%;
+  border-radius: 10px;
+  transition: all 0.25s;
+}
+
+#close{
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.hide{
+  display: none;
+}
+
